@@ -1,0 +1,37 @@
+.view-notification-block {
+  /*display: none;*/
+  background-color: #222222;
+  border: 2px solid #000;
+  padding: 5px 5px 20px 5px;
+  
+}
+
+.view-notification-block, .view-notification-block h2, .view-notification-block a:link, .view-notification-block a:visited{
+  color: #fff;
+}
+
+.view-notification-block a:link, .view-notification-block a:visited{
+  float:right;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.view-notification-block a:hover{
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Different theming for block on wallet page*/
+
+#page-wallet .view-notification-block {
+  /*display: none;*/
+  background-color: #ffffff;
+  border: 2px solid #503A30;
+  padding: 5px 5px 20px 5px;
+  
+}
+
+#page-wallet .view-notification-block, #page-wallet .view-notification-block h2, #page-wallet .view-notification-block a:link, #page-wallet .view-notification-block a:visited{
+  color: #503A30;
+}

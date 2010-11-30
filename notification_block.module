@@ -1,0 +1,27 @@
+<?php
+
+include_once('notification_block.features.inc');
+
+/*
+ * Implementation of hook_theme
+ */
+
+function notification_block_theme($existing, $type, $theme, $path) {
+    $path = drupal_get_path('module', 'notification_block') .'/theme';
+    $file = "notification_block.theme.inc";
+    
+    return array(
+      'views_view_unformatted__notification_block' => array(
+        'arguments' => array('view' => NULL, 'options' => NULL, 'rows' => NULL, 'title' => NULL),
+        'template' => 'views-view-unformatted--notification-block',
+        'path' => $path,
+        'file' => $file,
+        'original hook' => 'views_view_unformatted',
+        'preprocess functions' => array(
+          'template_preprocess',
+          'template_preprocess_views_view_unformatted__page-1',
+          'notification_block_preprocess_views_view_unformatted__notification_block',
+        ),
+      ),
+    );
+}
