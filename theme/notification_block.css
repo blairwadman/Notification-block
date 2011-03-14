@@ -21,17 +21,3 @@
   color: #000;
   padding: 5px;
 }
-
-/* Different theming for block on wallet page*/
-
-#page-wallet .view-notification-block {
-  /*display: none;*/
-  background-color: #ffffff;
-  border: 2px solid #503A30;
-  padding: 5px 5px 20px 5px;
-  
-}
-
-#page-wallet .view-notification-block, #page-wallet .view-notification-block h2, #page-wallet .view-notification-block a:link, #page-wallet .view-notification-block a:visited{
-  color: #503A30;
-}

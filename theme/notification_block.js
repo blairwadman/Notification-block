@@ -1,5 +1,3 @@
-
-//Drupal.behaviors.hideNotification = function() {
 $(document).ready(function(){
   //$('.view-notification-block').hide();
   //$('.view-notification-block').fadeIn(3000);
@@ -8,4 +6,3 @@ $(document).ready(function(){
   });    
   return false;
 });
-//}
